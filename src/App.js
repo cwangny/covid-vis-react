@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+// importing components
+import Cards from './components/Cards/Cards';
+import Chart from './components/Chart/Chart';
+import CountryPicker from './components/CountryPicker/CountryPicker';
+// importing css styles, .module.css files enable the css styles to have a local scope. 
+import styles from './App.module.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn Reacts
-        </a>
-      </header>
-    </div>
-  );
+// Only class based componenet that we need. Class based component cannot use hooks. 
+class App extends React.Component {
+  render() {
+    return (
+      // JSX 
+      <div className={styles.container}>
+        <Cards/>
+        <CountryPicker />
+        <Chart />
+        
+      </div>
+    )
+  }
 }
 
 export default App;
