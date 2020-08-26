@@ -19,3 +19,15 @@ export const fetchData = async() => {
 
     }
 }
+
+// function to fectch graph data
+
+export const fetchDailyData = async() => {
+    try {
+        const response = await axios.get(`${url}/daily`);
+
+        console.log(response);
+    } catch (error) {
+
+    }
+}
