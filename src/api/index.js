@@ -13,7 +13,7 @@ export const fetchData = async() => {
             deaths: data.deaths,
             lastUpdate: data.lastUpdate
         }
-
+        
         return modifiedData;
     } catch (error) {
 
@@ -29,9 +29,12 @@ export const fetchDailyData = async() => {
         const modifiedResponse = data.map((dailyData) => ({
             confirmed: dailyData.confirmed.total,
             deaths: dailyData.deaths.total,
-            date: dailyData.reportDate
+            date: dailyData.reportDate,
+            deltaConfirmed: dailyData.deltaConfirmedDetail.total,
+            
         }))
 
+        //console.log(modifiedResponse);
         return modifiedResponse;
     } catch (error) {
 

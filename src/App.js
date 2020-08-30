@@ -2,7 +2,6 @@ import React from 'react';
 // importing components
 import Cards from './components/Cards/Cards';
 import Chart from './components/Chart/Chart';
-import CountryPicker from './components/CountryPicker/CountryPicker';
 // importing css styles, .module.css files enable the css styles to have a local scope. 
 import styles from './App.module.css';
 
@@ -20,6 +19,8 @@ class App extends React.Component {
     const fetchedData = await fetchData();
     // fills the state with values 
     this.setState({data:fetchedData});
+
+    
   }
 
   render() {
@@ -27,7 +28,6 @@ class App extends React.Component {
       // JSX 
       <div className={styles.container}>
         <Cards data={this.state.data}/>
-        <CountryPicker />
         <Chart />
         
       </div>

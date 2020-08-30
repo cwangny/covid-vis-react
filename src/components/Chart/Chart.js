@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import {fetchDailyData} from '../../api/index';
-import {Line, Bar} from 'react-chartjs-2';
+import {Line} from 'react-chartjs-2';
 
 import styles from './Chart.module.css';
 
@@ -28,13 +28,26 @@ const Chart = ()=> {
             <Line data={{
                 labels: dailyData.map(({date}) => date),
 
-                datasets:[{
+                datasets:[
+                {
                     data: dailyData.map(({confirmed}) => confirmed),
-                    label: 'infected'
-                }, {
+                    label: 'Infected',
+                    borderColor: 'rebeccapurple',
+                    fill: true
+                }, 
+                {
                     data: dailyData.map(({deaths}) => deaths),
-                    label: 'deaths'
-                }]
+                    label: 'Deaths',
+                    borderColor: 'red',
+                    fill: true
+                },
+                {
+                    data: dailyData.map(({deltaConfirmed}) => deltaConfirmed),
+                    label: 'Delta Confirmed',
+                    borderColor: 'gold',
+                    fill: true
+                }
+                ]
             }} />
         ) : null
     )
