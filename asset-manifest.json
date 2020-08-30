@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/covid-vis-react/static/css/main.23c49c30.chunk.css",
+    "main.js": "/covid-vis-react/static/js/main.82158519.chunk.js",
+    "main.js.map": "/covid-vis-react/static/js/main.82158519.chunk.js.map",
+    "runtime-main.js": "/covid-vis-react/static/js/runtime-main.8b49404d.js",
+    "runtime-main.js.map": "/covid-vis-react/static/js/runtime-main.8b49404d.js.map",
+    "static/js/2.467add31.chunk.js": "/covid-vis-react/static/js/2.467add31.chunk.js",
+    "static/js/2.467add31.chunk.js.map": "/covid-vis-react/static/js/2.467add31.chunk.js.map",
+    "index.html": "/covid-vis-react/index.html",
+    "precache-manifest.fd1268e8b6e0824ac7058e72c960df06.js": "/covid-vis-react/precache-manifest.fd1268e8b6e0824ac7058e72c960df06.js",
+    "service-worker.js": "/covid-vis-react/service-worker.js",
+    "static/css/main.23c49c30.chunk.css.map": "/covid-vis-react/static/css/main.23c49c30.chunk.css.map",
+    "static/js/2.467add31.chunk.js.LICENSE.txt": "/covid-vis-react/static/js/2.467add31.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8b49404d.js",
+    "static/js/2.467add31.chunk.js",
+    "static/css/main.23c49c30.chunk.css",
+    "static/js/main.82158519.chunk.js"
+  ]
+}
