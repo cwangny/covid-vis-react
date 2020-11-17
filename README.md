@@ -1,4 +1,4 @@
-Hosted at: http://misoncaamwang.me/covid-vis-react/
+Hosted at:  https://cwangny.github.io/covid-vis-react/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
